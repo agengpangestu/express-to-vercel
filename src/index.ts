@@ -1,7 +1,8 @@
+import 'dotenv/config'
 import createServer from "./utils";
 
 const app = createServer();
-const port = 5000;
+const port = process.env.PORT;
 
 app.listen(port, () => console.log(`server running at ${port}`));
 
